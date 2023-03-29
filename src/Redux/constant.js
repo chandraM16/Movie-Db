@@ -1,0 +1,7 @@
+export const INCREASE_PAGE = "INCREASE_PAGE";
+export const DECREASE_PAGE = "DECREASE_PAGE";
+export const UPDATE_PAGE = "UPDATE_PAGE";
+export const UPDATE_CATEGORY = "UPDATE_CATEGORY";
+export const ADD_FILE_TO_FAV = "ADD_FILE_TO_FAV";
+export const ADD_FILE_TO_WISHLIST = "ADD_FILE_TO_WISHLIST";
+export const ADD_FILE_TO_CART = "ADD_FILE_TO_CART";

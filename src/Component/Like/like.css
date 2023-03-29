@@ -1,0 +1,9 @@
+.liked {
+  cursor: pointer;
+  color: red;
+}
+
+.normal {
+  cursor: pointer;
+  color: rgb(149, 149, 149);
+}

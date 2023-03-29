@@ -1,0 +1,77 @@
+.movies-cont {
+  border: 3px solid #b0afaf;
+  border: 0.3rem;
+  width: 100%;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 60vh;
+
+}
+.movies-head{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.movie-card {
+  width: 13rem;
+  /* height: 25rem; */
+  background-color: black;
+  position: relative;
+  margin: 0.5rem;
+}
+.card-img {
+  width: 13rem;
+  height: 20rem;
+}
+.movie-card-body {
+  padding: 0.5rem;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.card-title {
+  text-align: start;
+  font-size: 1rem;
+  color: gold;
+  margin: 0;
+  min-height: 2.5rem;
+}
+.movie-rating {
+  font-size: 1rem;
+  color: gold;
+  margin: 0;
+}
+.movie-release-date {
+  font-size: 1rem;
+  color:white;
+}
+.add-to-fav {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  /* border: 2px solid red; */
+  width: 4rem;
+  /* height: 3rem; */
+  
+}
+.add-to-wishList {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4rem;
+  /* height: 3rem; */
+}
+.add-to-cart {
+  width: 2rem;
+  position: absolute;
+  right: 3rem;
+  top: 22.8rem;
+}
+
+.page-link{
+  background-color: black;
+}
