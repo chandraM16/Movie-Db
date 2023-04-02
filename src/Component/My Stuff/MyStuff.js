@@ -8,17 +8,21 @@ export const MyStuff = () => {
   const state = useSelector((data) => data.movieData);
   let { stuff_category } = useParams();
   const [stuffMovies, setStuffMovies] = useState([]);
+  const [category, setCategory] = useState("");
 
   useEffect(() => {
     if (stuff_category === "favorite") {
-      console.log("fav", state.fav);
+      // console.log("fav", state.fav);
       setStuffMovies([...state.fav]);
+      setCategory("fav");
     } else if (stuff_category === "watchList") {
-      console.log("watchList", state.wishList);
+      // console.log("watchList", state.wishList);
       setStuffMovies([...state.wishList]);
+      setCategory("wishList");
     } else {
-      console.log("Cart", state.cart);
+      // console.log("Cart", state.cart);
       setStuffMovies([...state.cart]);
+      setCategory("cart");
     }
   }, [state, stuff_category]);
 
@@ -29,7 +33,11 @@ export const MyStuff = () => {
       </div>
       <div className="stuff-box">
         <div className="stuff-filter">
-          <Search stuffMovies={stuffMovies} setStuffMovies={setStuffMovies} />
+          <Search
+            stuffMovies={stuffMovies}
+            setStuffMovies={setStuffMovies}
+            category={category}
+          />
         </div>
         <div className="stuff">
           <Table stuffMovies={stuffMovies} />

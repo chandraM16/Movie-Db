@@ -13,6 +13,7 @@ import "../Content Showcase/showcase.css";
 
 export const Content = (prop) => {
   const contentObj = useLocation().state;
+  console.log(contentObj)
   return (
     <div className="content-cont">
       <img

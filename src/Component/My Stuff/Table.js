@@ -6,6 +6,7 @@ import StarIcon from "@mui/icons-material/Star";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 export const Table = ({ stuffMovies }) => {
+  // console.log(stuffMovies);
   const { currPage, directionObj } = useSelector((data) => data.movieData);
   if (!stuffMovies.length) {
     return <h3>No Movie Found</h3>;
@@ -26,6 +27,7 @@ export const Table = ({ stuffMovies }) => {
         </thead>
         <tbody>
           {stuffMovies.map((movieObj) => {
+            // console.log(movieObj.id);
             return (
               <tr key={movieObj.id}>
                 <th scope="row">
@@ -42,7 +44,7 @@ export const Table = ({ stuffMovies }) => {
                     style={{ textDecoration: "none" }}
                     state={{ ...movieObj }}
                   >
-                    <h5 style={{color : "gold", fontSize : "1.2rem"}}>
+                    <h5 style={{ color: "gold", fontSize: "1.2rem" }}>
                       {movieObj.original_title || movieObj.name}
                     </h5>
                   </Link>

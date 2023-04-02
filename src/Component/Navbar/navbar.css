@@ -12,3 +12,13 @@
   height: 4rem;
   border-radius: 100%;
 }
+.info{
+  display: flex;
+}
+
+.info h3{
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  font-weight: normal;
+  color: #f8f9faa6;
+}

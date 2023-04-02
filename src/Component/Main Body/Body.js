@@ -8,7 +8,7 @@ export const Body = () => {
     <div>
       <MainCarousel />
       <Poster
-        name="Tv Shows"
+        name="TV Shows"
         src="https://primetoday.in/wp-content/uploads/2023/02/Orange-And-Red-Modern-Minimalist-The-Most-Attractive-YouTube-Banner-22.png"
         sub_category="top_rated"
         category="tv"

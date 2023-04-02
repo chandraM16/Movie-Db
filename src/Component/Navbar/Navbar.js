@@ -3,11 +3,13 @@ import React from "react";
 import "../Navbar/navbar.css";
 import { Link } from "react-router-dom";
 import { movieDirection, tvDirection } from "./navDirection";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { updateSub_Category } from "../../Redux/action/actions";
 
 export const Navbar = () => {
   const dispatch = useDispatch();
+  const state = useSelector((data) => data.movieData);
+  console.log(state)
   return (
     <nav
       className="navbar navbar-expand-lg bg-body-tertiary  bg-dark"
@@ -120,6 +122,11 @@ export const Navbar = () => {
               </ul>
             </li>
           </ul>
+          <div className="info">
+            <h3>Fav {state.fav.length}</h3>
+            <h3>WatchList {state.wishList.length}</h3>
+            <h3>Cart {state.cart.length}</h3>
+          </div>
         </div>
       </div>
     </nav>
